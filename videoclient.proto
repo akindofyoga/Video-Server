@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package videoclient;
+
+option java_package = "com.example.videoclient";
+option java_outer_classname = "VideoClientProtos";
+
+message Update {
+  required string update_id = 1;
+  required string filename = 2;
+  required bytes video = 3;
+}
